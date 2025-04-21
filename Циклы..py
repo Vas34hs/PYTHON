@@ -41,31 +41,31 @@
 #     i += 1
 # # print(f"ваш факториал равен: {f}")
 # #Проверка строки на палиндром через цикл while
-# stringUser = input("Введите строку для проверки:")
-# #А роза упала на лапу Азора
-# #а буду я у дуба
-# i = len(stringUser) - 1
-# strA = ''
-# while i >= 0:
-#     strA += stringUser[i]
-#     i -= 1
-# if strA == stringUser:
-#     print("Строка палиндром!")
-# else:
-#     print("Строка - не палиндром!")
-# strA = ''
-# for i in stringUser:
-#     strA = i + strA
-# if strA == stringUser:
-#     print()
-# if stringUser == stringUser[::-1]:
-#     print("Строка палиндром!")
-#Метод среза строки
-# stringA = "Hello world"
-# a = stringA[6] # 'w'
-# b = stringA[0:5]# 'Hello'
-# c = stringA[0:5:2] #'Hlo'
-# d = stringA[0:5:-1]#'olleH'
-#stringB = "".join(reversed(stringA))
-#stringC = ",".join(reversed(stringA)) #'H,e,l,l,o'
-#stringB = " ".split(reversed(stringA))
+stringUser = input("Введите строку для проверки:")
+#А роза упала на лапу Азора
+#а буду я у дуба
+i = len(stringUser) - 1
+strA = ''
+while i >= 0:
+    strA += stringUser[i]
+    i -= 1
+if strA == stringUser:
+    print("Строка палиндром!")
+else:
+    print("Строка - не палиндром!")
+strA = ''
+for i in stringUser:
+    strA = i + strA
+if strA == stringUser:
+    print()
+if stringUser == stringUser[::-1]:
+    print("Строка палиндром!")
+# Метод среза строки
+stringA = "Hello world"
+a = stringA[6] # 'w'
+b = stringA[0:5]# 'Hello'
+c = stringA[0:5:2] #'Hlo'
+d = stringA[0:5:-1]#'olleH'
+stringB = "".join(reversed(stringA))
+stringC = ",".join(reversed(stringA)) #'H,e,l,l,o'
+stringB = " ".split(reversed(stringA))
