@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <style>
+      h4 {
+        font-family: Verdana, sans-serif;
+      }
+      form {
+        width: 270px;
+      }
+      input, select, textarea {
+               width: 130px;
+
+      }
+      input:focus, select:focus, textarea:focus {
+        border-color: rgb(255, 255, 0);
+      }
+      div {
+        padding: 0.2em;
+      }
+      select {
+        width: 130px;
+        box-sizing: border-box;
+
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      fieldset {
+        margin: 0.5em;
+        width: 210px;
+      }
+      label span {
+        width: 110px;
+        text-align: right;
+        display: inline-block;
+      }
+      input[type="radio"], input[type="checkbox"] {
+        width: auto;
+      }
+      button[type="submit"] {
+        width: 110px;
+        height: 30px;
+
+      }
+      textarea {
+        resize: vertical;
+        min-height: 40px;
+        max-height: 100px;
+      }
+      small {
+        font-size: 10px;
+        color: #888;
+      }
+    </style>
+    <meta charset="utf-8" />
+    <title>Заказ суши</title>
+  </head>
+  <body>
+    <h4>Заполните данные для заказа суши:</h4>
+    <form>
+      <div>
+        <label>
+          <span>Имя:</span>
+          <input type="text" id="name" name="userName" required>
+        </label>
+      </div>
+      <div>
+        <label>
+          <span>Адрес:</span>
+          <input type="text" id="address" name="userAddress" required>
+        </label>
+      </div>
+      <div>
+        <label>
+          <span>Телефон:</span>
+          <input type="number" id="phone" name="userPhone" required>
+        </label>
+      </div>
+      <div>
+        <label>
+          <span>Email:</span>
+          <input type="email" id="email" name="userEmail" required
+        </label>
+      </div>
+      <div>
+        <label>
+          <span>Кол-во палочек:</span>
+          <input type="number" id="sticks" name="sticksCount" min="0" max="10" value="1" required>
+        </label>
+      </div>
+      <fieldset>
+        <legend>Вид палочек:</legend>
+        <ul>
+          <li>
+            <label>
+              <span>Обычные</span>
+              <input type="radio" name="sticksType" checked>
+            </label>
+          </li>
+          <li>
+            <label>
+              <span>Учебные</span>
+              <input type="radio" name="sticksType" value="Учебные">
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <div>
+        <label>
+          <span>Выберите суши:</span>
+          <select id="sushiList" name="sushiList" required>
+            <option value="Филадельфия">Филадельфия
+            <option value="Калифорния">Калифорния
+            <option value="Спайси">Спайси
+        </label>
+      </div>
+      <div>
+        <label>
+          <span>Салфетки?</span>
+          <input type="checkbox" id="napkins" name="napkin" />
+        </label>
+      </div>
+      <div>
+        <label>
+          <span>Комментарий:</span>
+          <textarea id="comment" name="comment" rows="два" placeholder="Комментарий"></textarea>
+        </label>
+      </div>
+      <div>
+      </div>
+    </form>
+    <button type="submit">Заказать</button>
+  </body>
+</html>
